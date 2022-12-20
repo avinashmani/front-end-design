@@ -1,0 +1,159 @@
+.introbox {
+  padding: 8%;
+  color: #FFFFD0;
+}
+
+.Album {
+  background-color: #000000;
+  margin: 1% .25% 2% 0%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3)0px 19px 38px, rgba(0, 0, 0, 0.22)0px 15px 12px;
+}
+
+.musicplayer {
+  background-color: #000000;
+  margin: 1% 0% 2% 0%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3)0px 19px 38px, rgba(0, 0, 0, 0.22)0px 15px 12px;
+}
+
+.Utahimg {
+  width: 78%;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.playerimg {
+  width: 20%;
+  object-fit: contain;
+  border-radius: 100%;
+  margin-top: 6%;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.piccolumn {
+  padding-right: 0;
+}
+
+.btn {
+  margin: 1% 8% 0 0;
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.random-track,
+.prev-track,
+.playpause-track,
+.next-track,
+.repeat-track {
+  padding: 15%;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.random-track:hover,
+.prev-track:hover,
+.playpause-track:hover,
+.next-track:hover,
+.repeat-track:hover {
+  opacity: 1.0;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #83a9ff;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #3774ff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+i.fa-volume-low,
+i.fa-volume-high {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+i,
+i.fa-shuffle,
+i.fa-backward-step,
+i.fa-circle-play,
+i.fa-forward-step,
+i.fa-rotate-right{
+  cursor: pointer;
+}
+h1 {
+  font-family: Roboto;
+  font-weight: 700;
+  color: #FFFFD0;
+}
+
+h6 {
+  font-family: Roboto;
+  font-weight: 400;
+  color: #FFFFD0;
+}
+
+.icon {
+  color: #0008C1;
+}
+
+marquee {
+  font-size: .75rem;
+  margin-bottom: -0%;
+  color: white;
+}

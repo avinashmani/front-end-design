@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sample FrontEnd</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/b829abb126.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid text-center">
+    <!-- Stack the columns on mobile by making both full width -->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row Album">
+          <div class="col text-center introbox">
+            <h1>Utah Case</h1>
+            <h6>with Kristein Watson</h6>
+            <div class="row">
+              <div class="col-6 text-end">
+                 <i class="fa-solid fa-circle-play icon"></i> 70,000 + plays
+              </div>
+              <div class="col-6 text-start">
+                 <i class="fa-solid fa-headphones icon"></i> 327 playing now
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg ">Play now</button>
+            <button type="button" class="btn btn-outline-light btn-lg ">Save for Later</button>
+          </div>
+          <div class="col text-end piccolumn">
+            <img src="C:\Users\opsop\OneDrive\Desktop\New folder\images\img-62.jpg" class=" float-end Utahimg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 musicplayer">
+        <marquee>Now Playing</marquee>
+        <img src="C:\Users\opsop\OneDrive\Desktop\New folder\images\img-63.jpg" class="playerimg"alt="">
+        <div class="slider-container">
+          <div class="current-time">
+            00:00
+          </div>
+          <input type="range" min="1" max="100" name="" value="0" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">
+            00:00
+          </div>
+        </div>
+        <div class="slider-container">
+          <i class="fa-solid fa-volume-low"></i>
+          <input type="range" min="1" max="100" name="" value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa-solid fa-volume-high"></i>
+        </div>
+        <div class="Buttons">
+          <div class="random-track" onclick="randomTrack()">
+            <i class="fa-solid fa-shuffle fa-2x" title="random"></i>
+          </div>
+          <div class="prev-track" onclick="prevtrack()">
+            <i class="fa-solid fa-backward-step fa-2x"></i>
+          </div>
+          <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa-solid fa-circle-play fa-5x"></i>
+          </div>
+          <div class="next-track" onclick="nextTrack()">
+            <i class="fa-solid fa-forward-step fa-2x"></i>
+          </div>
+          <div class="repeat-track" onclick="repeatTrack()">
+            <i class="fa-sharp fa-solid fa-rotate-right fa-2x"></i>
+          </div>
+        </div>
+        <div id="wave">
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+          <span class="stroke"></span>
+        </div>
+
+      </div>
+    </div>
+</body>
+
+</html>
